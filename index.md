@@ -8,10 +8,10 @@ Welcome to slippersss's blog.
 * <a href = "#Linux">Linux</a>  
 * <a href = "#Markdown">Markdown</a>
 
-# <div id = "Leetcode">Leetcode</div>
+# <a id = "Leetcode"></a>Leetcode
 
-# <div id = "Linux">Linux</div>
+# <a id = "Linux"></a>Linux
 
-# <div id = "Markdown">Markdown</div>
+# <a id = "Markdown"></a>Markdown
 
 * [HelloWorld](slippersss.github.io/Markdown/HelloWorld.md)
