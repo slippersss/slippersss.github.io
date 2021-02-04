@@ -6,12 +6,12 @@ Markdown language, created by John Gruber, 2004.
 
 ## Title
 
-Level 1 using '=' or '#'.  
-Level 2 using '-' or '##'.  
-Level 3 using '###'.  
-Level 4 using '####'.  
-Level 5 using '#####'.  
-Level 6 using '######'.
+Level 1 using "=" or "#".  
+Level 2 using "-" or "##".  
+Level 3 using "###".  
+Level 4 using "####".  
+Level 5 using "#####".  
+Level 6 using "######".
 
 ## Font
 
@@ -21,7 +21,7 @@ Level 6 using '######'.
 
 ## Separator
 
-Using '\*\*\*'.
+Using "\*\*\*".
 
 ## Strikeout
 
