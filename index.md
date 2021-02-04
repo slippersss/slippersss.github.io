@@ -14,4 +14,4 @@ Welcome to slippersss's blog.
 
 # <a id = "Markdown"></a>Markdown
 
-* [HelloWorld](slippersss.github.io/Markdown/HelloWorld.md)
+* [HelloWorld](./Markdown/HelloWorld)
