@@ -4,10 +4,10 @@ Welcome to slippersss's blog.
 
 # Directory
 
+* <a href = "#Javascript">Javascript</a>  
 * <a href = "#Leetcode">Leetcode</a>  
 * <a href = "#Linux">Linux</a>  
-* <a href = "#Markdown">Markdown</a>  
-* <a href = "#Javascript">Javascript</a>
+* <a href = "#Markdown">Markdown</a>
 
 # <a id = "Javascript"></a>Javascript
 
