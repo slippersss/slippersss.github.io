@@ -26,7 +26,7 @@ else {
     // Argument
     const SIZE  = 15;
     const WIDTH = 5;
-    const DEPTH = 5;
+    const DEPTH = 8;
     const RATIO = (argument === "firstHand") ? 0.9 : 1.1;
 
     // Simulation
