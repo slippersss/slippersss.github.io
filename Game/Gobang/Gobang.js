@@ -583,7 +583,6 @@ else {
     for(var i = 0; i < SIZE; ++i) {
         var tr = document.createElement("tr");
         tr.style.display = "block";
-        tr.style.alignSelf = "center";
         for(var j = 0; j < SIZE; ++j) {
             var td = document.createElement("td");
             td.id = (i + 1) + "_" + (j + 1);
