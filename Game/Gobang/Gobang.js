@@ -500,7 +500,7 @@ else {
                 this.used.push([temp, temp]);
                 util.remove(this.rest, [temp, temp]);
                 var td = document.getElementById(temp + "_" + temp);
-                td.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"45\" height=\"45\">";
+                td.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"44\" height=\"44\">";
             }
         }
 
@@ -557,16 +557,16 @@ else {
             var [m, n] = this.robot.move(this);
             var td = document.getElementById(m + "_" + n);
             if(this.robot.getRole() === BLACK) {
-                td.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"45\" height=\"45\">";
+                td.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"44\" height=\"44\">";
                 var [a, b] = util.tail(this.used);
                 var temp = document.getElementById(a + "_" + b);
-                temp.innerHTML = "<img src=\"Gobang.annex/White.png\" width=\"45\" height=\"45\">";
+                temp.innerHTML = "<img src=\"Gobang.annex/White.png\" width=\"44\" height=\"44\">";
             }
             else {
-                td.innerHTML = "<img src=\"Gobang.annex/WhiteActive.png\" width=\"45\" height=\"45\">";
+                td.innerHTML = "<img src=\"Gobang.annex/WhiteActive.png\" width=\"44\" height=\"44\">";
                 var [a, b] = util.tail(this.used);
                 var temp = document.getElementById(a + "_" + b);
-                temp.innerHTML = "<img src=\"Gobang.annex/Black.png\" width=\"45\" height=\"45\">";
+                temp.innerHTML = "<img src=\"Gobang.annex/Black.png\" width=\"44\" height=\"44\">";
             }
             this.board.chess(m, n, this.robot.getRole());
             this.used.push([m, n]);
@@ -588,10 +588,10 @@ else {
             var td = document.createElement("td");
             td.id = (i + 1) + "_" + (j + 1);
             if((i + 1 === 4 && (j + 1 === 4 || j + 1 === 12)) || (i + 1 === 8 && j + 1 === 8) || (i + 1 === 12 && (j + 1 === 4 || j + 1 === 12))) {
-                td.innerHTML = "<img src=\"Gobang.annex/BlankPoint.png\" width=\"45\" height=\"45\">";
+                td.innerHTML = "<img src=\"Gobang.annex/BlankPoint.png\" width=\"44\" height=\"44\">";
             }
             else {
-                td.innerHTML = "<img src=\"Gobang.annex/Blank.png\" width=\"45\" height=\"45\">";
+                td.innerHTML = "<img src=\"Gobang.annex/Blank.png\" width=\"44\" height=\"44\">";
             }
             tr.append(td);
         }
@@ -603,18 +603,18 @@ else {
             var y = Number(event.target.parentNode.id.split("_")[1]);
             if(!consider && !gameover && event.target.parentNode.innerHTML.includes("Blank")) {
                 if(arena.role === BLACK) {
-                    event.target.parentNode.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"45\" height=\"45\">";
+                    event.target.parentNode.innerHTML = "<img src=\"Gobang.annex/BlackActive.png\" width=\"44\" height=\"44\">";
                     if(util.length(arena.used)) {
                         var [a, b] = util.tail(arena.used);
                         var temp = document.getElementById(a + "_" + b);
-                        temp.innerHTML = "<img src=\"Gobang.annex/White.png\" width=\"45\" height=\"45\">";
+                        temp.innerHTML = "<img src=\"Gobang.annex/White.png\" width=\"44\" height=\"44\">";
                     }
                 }
                 else {
-                    event.target.parentNode.innerHTML = "<img src=\"Gobang.annex/WhiteActive.png\" width=\"45\" height=\"45\">";
+                    event.target.parentNode.innerHTML = "<img src=\"Gobang.annex/WhiteActive.png\" width=\"44\" height=\"44\">";
                     var [a, b] = util.tail(arena.used);
                     var temp = document.getElementById(a + "_" + b);
-                    temp.innerHTML = "<img src=\"Gobang.annex/Black.png\" width=\"45\" height=\"45\">";
+                    temp.innerHTML = "<img src=\"Gobang.annex/Black.png\" width=\"44\" height=\"44\">";
                 }
                 setTimeout(() => {
                     consider = true;
