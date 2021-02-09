@@ -4,19 +4,24 @@ Welcome to slippersss's blog.
 
 # Directory
 
-* <a href = "#Javascript">Javascript</a>  
-* <a href = "#Leetcode">Leetcode</a>  
-* <a href = "#Linux">Linux</a>  
-* <a href = "#Markdown">Markdown</a>
+* <a href="#Game">Game</a>  
+* <a href="#Javascript">Javascript</a>  
+* <a href="#Leetcode">Leetcode</a>  
+* <a href="#Linux">Linux</a>  
+* <a href="#Markdown">Markdown</a>
 
-# <a id = "Javascript"></a>Javascript
+# <a id="Game"></a>Game
+
+* [Gobang](./Game/Gobang/Gobang.html)
+
+# <a id="Javascript"></a>Javascript
 
 * [HelloWorld](./Javascript/HelloWorld)
 
-# <a id = "Leetcode"></a>Leetcode
+# <a id="Leetcode"></a>Leetcode
 
-# <a id = "Linux"></a>Linux
+# <a id="Linux"></a>Linux
 
-# <a id = "Markdown"></a>Markdown
+# <a id="Markdown"></a>Markdown
 
 * [HelloWorld](./Markdown/HelloWorld)

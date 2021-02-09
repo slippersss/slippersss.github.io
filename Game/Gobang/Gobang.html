@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gobang</title>
+        <link rel="stylesheet" type="text/css" href="Gobang.css">
+        <style>
+            body {
+                text-align: center;
+            }
+            table {
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div hidden="hidden">
+            <!-- Preload image -->
+            <img src="Gobang.annex/Blank.png">
+            <img src="Gobang.annex/BlankPoint.png">
+            <img src="Gobang.annex/Black.png">
+            <img src="Gobang.annex/BlackActive.png">
+            <img src="Gobang.annex/White.png">
+            <img src="Gobang.annex/WhiteActive.png">
+        </div>
+        <button id="firstHand">First hand</button>
+
+        <button id="backHand">Back hand</button>
+        <table class="table" id="board" hidden="hidden">
+            <!-- Board from javascript -->
+        </table>
+        <script src="Gobang.js"></script>
+    </body>
+</html>

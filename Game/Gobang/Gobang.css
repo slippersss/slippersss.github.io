@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, td {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
