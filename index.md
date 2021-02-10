@@ -1,4 +1,4 @@
-<script src="https://slippersss.github.io/tex-svg-full.js"></script>
+<script src="https://slippersss.github.io/tex-svg-full.js"> </script>
 
 # Hello
 
