@@ -1,3 +1,5 @@
+<script src="https://slippersss.github.io/tex-svg-full.js"></script>
+
 # Hello
 
 心之所向, 素履以往.
@@ -33,5 +35,3 @@ Welcome to slippersss's blog.
 $$
 \sum_{i=0}^{10}i^2
 $$
-
-<script src="https://slippersss.github.io/tex-svg-full.js">
