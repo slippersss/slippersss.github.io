@@ -27,3 +27,11 @@ Welcome to slippersss's blog.
 # <a id="Markdown"></a>Markdown
 
 * [HelloWorld](Markdown/HelloWorld)
+
+# test part
+
+$$
+\sum_{i=0}^{10}i^2
+$$
+
+<script src="https://slippersss.github.io/tex-svg-full.js">
