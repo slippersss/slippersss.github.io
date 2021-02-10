@@ -1,8 +1,4 @@
-<h1 text-align="center">
-心之所向 素履以往
-</h1>
-
-# Hello
+# 心之所向, 素履以往
 
 Welcome to slippersss's blog.
 
@@ -16,11 +12,11 @@ Welcome to slippersss's blog.
 
 # <a id="Game"></a>Game
 
-* [Gobang](./Game/Gobang/Gobang.html)
+* [Gobang](Game/Gobang/Gobang.html)
 
 # <a id="Javascript"></a>Javascript
 
-* [HelloWorld](./Javascript/HelloWorld)
+* [HelloWorld](Javascript/HelloWorld)
 
 # <a id="Leetcode"></a>Leetcode
 
@@ -28,4 +24,4 @@ Welcome to slippersss's blog.
 
 # <a id="Markdown"></a>Markdown
 
-* [HelloWorld](./Markdown/HelloWorld)
+* [HelloWorld](Markdown/HelloWorld)

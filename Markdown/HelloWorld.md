@@ -62,7 +62,7 @@ int main()
 
 ## Picture
 
-![Desktop](./HelloWorld.annex/desktop.jpg)
+![Desktop](HelloWorld.annex/desktop.jpg)
 
 ## Table
 
