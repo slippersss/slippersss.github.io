@@ -1,3 +1,7 @@
+<h1 text-align="center">
+心之所向 素履以往
+</h1>
+
 # Hello
 
 Welcome to slippersss's blog.
