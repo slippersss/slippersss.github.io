@@ -27,7 +27,7 @@ else {
     const SIZE  = 15;
     const WIDTH = 5;
     const DEPTH = 8;
-    const RATIO = (argument === "firstHand") ? 0.9 : 1.1;
+    const RATIO = (argument === "firstHand") ? -0.1 : 0.1;
 
     // Simulation
     const INF  = 2147483647;
@@ -41,36 +41,36 @@ else {
 
     // Pattern for score
     const PATTERN_SCORE = [
-        [1,               BLANK, BLANK, BLACK, BLACK, BLANK, BLANK], // _ _ X X _ _
-        [1,               BLANK, BLACK, BLANK, BLACK, BLANK],        // _ X _ X _
-        [1,               BLANK, BLACK, BLANK, BLANK, BLACK, BLANK], // _ X _ _ X _
-        [4000,            BLANK, BLACK, BLACK, BLACK, BLANK],        // _ X X X _
-        [4000,            BLANK, BLACK, BLACK, BLANK, BLACK, BLANK], // _ X X _ X _
-        [4000,            BLANK, BLACK, BLANK, BLACK, BLACK, BLANK], // _ X _ X X _
-        [5000,            BOUND, BLACK, BLACK, BLACK, BLACK, BLANK], // | X X X X _
-        [5000,            BLANK, BLACK, BLACK, BLACK, BLACK, BOUND], // _ X X X X |
-        [5000,            WHITE, BLACK, BLACK, BLACK, BLACK, BLANK], // O X X X X _
-        [5000,            BLANK, BLACK, BLACK, BLACK, BLACK, WHITE], // _ X X X X O
-        [5000,            BLACK, BLACK, BLACK, BLANK, BLACK],        // X X X _ X
-        [5000,            BLACK, BLANK, BLACK, BLACK, BLACK],        // X _ X X X
-        [5000,            BLACK, BLACK, BLANK, BLACK, BLACK],        // X X _ X X
-        [9000,            BLANK, BLACK, BLACK, BLACK, BLACK, BLANK], // _ X X X X _
-        [100000,          BLACK, BLACK, BLACK, BLACK, BLACK],        // X X X X X
-        [-1,              BLANK, BLANK, WHITE, WHITE, BLANK, BLANK], // _ _ O O _ _
-        [-1,              BLANK, WHITE, BLANK, WHITE, BLANK],        // _ O _ O _
-        [-1,              BLANK, WHITE, BLANK, BLANK, WHITE, BLANK], // _ O _ _ O _
-        [RATIO * -4000,   BLANK, WHITE, WHITE, WHITE, BLANK],        // _ O O O _
-        [RATIO * -4000,   BLANK, WHITE, WHITE, BLANK, WHITE, BLANK], // _ O O _ O _
-        [RATIO * -4000,   BLANK, WHITE, BLANK, WHITE, WHITE, BLANK], // _ O _ O O _
-        [RATIO * -5000,   BOUND, WHITE, WHITE, WHITE, WHITE, BLANK], // | O O O O _
-        [RATIO * -5000,   BLANK, WHITE, WHITE, WHITE, WHITE, BOUND], // _ O O O O |
-        [RATIO * -5000,   BLACK, WHITE, WHITE, WHITE, WHITE, BLANK], // X O O O O _
-        [RATIO * -5000,   BLANK, WHITE, WHITE, WHITE, WHITE, BLACK], // _ O O O O X
-        [RATIO * -5000,   WHITE, WHITE, WHITE, BLANK, WHITE],        // O O O _ O
-        [RATIO * -5000,   WHITE, BLANK, WHITE, WHITE, WHITE],        // O _ O O O
-        [RATIO * -5000,   WHITE, WHITE, BLANK, WHITE, WHITE],        // O O _ O O
-        [RATIO * -9000,   BLANK, WHITE, WHITE, WHITE, WHITE, BLANK], // _ O O O O _
-        [RATIO * -100000, WHITE, WHITE, WHITE, WHITE, WHITE]         // O O O O O
+        [1,                        BLANK, BLANK, BLACK, BLACK, BLANK, BLANK], // _ _ X X _ _
+        [1,                        BLANK, BLACK, BLANK, BLACK, BLANK],        // _ X _ X _
+        [1,                        BLANK, BLACK, BLANK, BLANK, BLACK, BLANK], // _ X _ _ X _
+        [4000,                     BLANK, BLACK, BLACK, BLACK, BLANK],        // _ X X X _
+        [4000,                     BLANK, BLACK, BLACK, BLANK, BLACK, BLANK], // _ X X _ X _
+        [4000,                     BLANK, BLACK, BLANK, BLACK, BLACK, BLANK], // _ X _ X X _
+        [5000,                     BOUND, BLACK, BLACK, BLACK, BLACK, BLANK], // | X X X X _
+        [5000,                     BLANK, BLACK, BLACK, BLACK, BLACK, BOUND], // _ X X X X |
+        [5000,                     WHITE, BLACK, BLACK, BLACK, BLACK, BLANK], // O X X X X _
+        [5000,                     BLANK, BLACK, BLACK, BLACK, BLACK, WHITE], // _ X X X X O
+        [5000,                     BLACK, BLACK, BLACK, BLANK, BLACK],        // X X X _ X
+        [5000,                     BLACK, BLANK, BLACK, BLACK, BLACK],        // X _ X X X
+        [5000,                     BLACK, BLACK, BLANK, BLACK, BLACK],        // X X _ X X
+        [9000,                     BLANK, BLACK, BLACK, BLACK, BLACK, BLANK], // _ X X X X _
+        [100000,                   BLACK, BLACK, BLACK, BLACK, BLACK],        // X X X X X
+        [-1,                       BLANK, BLANK, WHITE, WHITE, BLANK, BLANK], // _ _ O O _ _
+        [-1,                       BLANK, WHITE, BLANK, WHITE, BLANK],        // _ O _ O _
+        [-1,                       BLANK, WHITE, BLANK, BLANK, WHITE, BLANK], // _ O _ _ O _
+        [RATIO * -4000 - 4000,     BLANK, WHITE, WHITE, WHITE, BLANK],        // _ O O O _
+        [RATIO * -4000 - 4000,     BLANK, WHITE, WHITE, BLANK, WHITE, BLANK], // _ O O _ O _
+        [RATIO * -4000 - 4000,     BLANK, WHITE, BLANK, WHITE, WHITE, BLANK], // _ O _ O O _
+        [RATIO * -5000 - 5000,     BOUND, WHITE, WHITE, WHITE, WHITE, BLANK], // | O O O O _
+        [RATIO * -5000 - 5000,     BLANK, WHITE, WHITE, WHITE, WHITE, BOUND], // _ O O O O |
+        [RATIO * -5000 - 5000,     BLACK, WHITE, WHITE, WHITE, WHITE, BLANK], // X O O O O _
+        [RATIO * -5000 - 5000,     BLANK, WHITE, WHITE, WHITE, WHITE, BLACK], // _ O O O O X
+        [RATIO * -5000 - 5000,     WHITE, WHITE, WHITE, BLANK, WHITE],        // O O O _ O
+        [RATIO * -5000 - 5000,     WHITE, BLANK, WHITE, WHITE, WHITE],        // O _ O O O
+        [RATIO * -5000 - 5000,     WHITE, WHITE, BLANK, WHITE, WHITE],        // O O _ O O
+        [RATIO * -9000 - 9000,     BLANK, WHITE, WHITE, WHITE, WHITE, BLANK], // _ O O O O _
+        [RATIO * -100000 - 100000, WHITE, WHITE, WHITE, WHITE, WHITE]         // O O O O O
     ];
 
     class Util {
