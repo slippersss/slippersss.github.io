@@ -10,6 +10,7 @@ Welcome to slippersss's blog.
 * <a href="#Javascript">Javascript</a>  
 * <a href="#Leetcode">Leetcode</a>  
 * <a href="#Linux">Linux</a>  
+* <a href="#MachineLearning">MachineLearning</a>  
 * <a href="#Markdown">Markdown</a>
 
 # <a id="Game"></a>Game
@@ -23,6 +24,10 @@ Welcome to slippersss's blog.
 # <a id="Leetcode"></a>Leetcode
 
 # <a id="Linux"></a>Linux
+
+# <a id="MachineLearning"></a>MachineLearning
+
+* [Notebook](MachineLearning/Notebook)
 
 # <a id="Markdown"></a>Markdown
 
