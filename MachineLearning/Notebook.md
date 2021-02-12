@@ -1,3 +1,5 @@
+<a><script src="https://slippersss.github.io/tex-svg-full.js"></script></a>
+
 # Regression
 
 ## Application
