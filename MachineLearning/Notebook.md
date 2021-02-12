@@ -14,6 +14,18 @@ $$
 y=b+\sum_iw_ix_i
 $$
 
+## Loss
+
+$$
+L(w,\ b)=\sum_n(\hat{y}^n-y^n)^2
+$$
+
+## Gradient descent
+
+$$
+w\leftarrow w-\eta\frac{\partial L}{\partial w}
+$$
+
 ## Regularization
 
 $$
