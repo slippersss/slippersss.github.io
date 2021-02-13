@@ -1,3 +1,10 @@
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
 <a><script src="https://slippersss.github.io/tex-svg-full.js"></script></a>
 
 # Error on testing data
@@ -7,6 +14,6 @@
 * bias  
 * variance
 
-## Test
+## Explanation
 
-Hello, see this \\(\sum\\)
+For variable \\(x\\), what about $\sum$.
