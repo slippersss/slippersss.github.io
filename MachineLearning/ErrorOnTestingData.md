@@ -1,13 +1,4 @@
-<a>
-    <script>
-        Mathjax = {
-            tex: {
-                inlineMath: [["$", "$"]]
-            }
-        };
-    </script>
-    <script src="https://slippersss.github.io/tex-svg-full.js"></script>
-</a>
+<a><script src="https://slippersss.github.io/tex-svg-full.js"></script></a>
 
 # Error on testing data
 
@@ -18,4 +9,4 @@
 
 ## Test
 
-Hello, see this $\sum$.
+Hello, see this \\(\sum\\)
