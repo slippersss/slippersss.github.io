@@ -1,10 +1,3 @@
-<script>
-    MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-    };
-</script>
 <a><script src="https://slippersss.github.io/tex-svg-full.js"></script></a>
 
 # Error on testing data
