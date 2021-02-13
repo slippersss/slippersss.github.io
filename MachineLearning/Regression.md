@@ -31,3 +31,15 @@ $$
 $$
 \lambda\sum_iw_i^2
 $$
+
+## Explanation
+
+$$
+\begin{aligned}
+&y'=b+\sum_iw_i(x_i+\Delta x_i)
+\\
+&y'-y=w_i\Delta x_x
+\end{aligned}
+$$
+
+Because of regularization, $w_i$ become small. So $w_i\Delta x_i$ become small, which means $x_i$ has little effect.
