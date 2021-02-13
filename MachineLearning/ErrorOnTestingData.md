@@ -35,6 +35,8 @@ $$
 
 Thus biased.
 
+That means normally estimator of mean $m$ should be close to $\mu$, estimator of variance $s^2$ should be smaller than $\sigma^2$.
+
 Simpler model is less influenced by the sampled data.
 
 For bias, that means underfitting. We can redesign model, like
@@ -46,3 +48,5 @@ For variance, that means overfitting. We can do something, like
 
 * more data  
 * regularization
+
+![BiasVariance](ErrorOnTestingData.annex/BiasVariance.png)
