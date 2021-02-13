@@ -1,7 +1,6 @@
 // Modified by slippersss
 
-MathJax = 
-{
+MathJax = {
     tex: {
         inlineMath: [["$","$"],["\\(","\\)"]]
     }
