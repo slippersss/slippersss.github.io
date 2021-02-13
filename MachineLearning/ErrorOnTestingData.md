@@ -1,10 +1,13 @@
-<a><script src="https://slippersss.github.io/tex-svg-full.js">
-    Mathjax = {
-        tex: {
-            inlineMath: [["$", "$"]]
-        }
-    };
-</script></a>
+<a>
+    <script>
+        Mathjax = {
+            tex: {
+                inlineMath: [["$", "$"]]
+            }
+        };
+    </script>
+    <script src="https://slippersss.github.io/tex-svg-full.js"></script>
+</a>
 
 # Error on testing data
 
