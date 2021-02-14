@@ -49,4 +49,6 @@ For variance, that means overfitting. We can do something, like
 * more data  
 * regularization
 
+When training, we prefer using N-fold cross validation.
+
 ![BiasVariance](ErrorOnTestingData.annex/BiasVariance.png)
