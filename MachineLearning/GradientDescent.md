@@ -15,7 +15,7 @@ $$
 Our method is
 
 $$
-\theta\leftarrow\theta-\eta\nabla L(\theta)
+\theta\leftarrow\theta-\eta\ \nabla L(\theta)
 $$
 
 ## Adaptive learning rates
@@ -25,16 +25,16 @@ Reduce the learning rate by some factor every few epochs.
 * Vanilla gradient descent
 
     $$
-    w^{t+1}\leftarrow w^t-\eta^tg^t
+    w^{t+1}\leftarrow w^t-\eta^t\ g^t
     $$
 
 * Adgrad
 
     $$
     \begin{aligned}
-    &w^{t+1}\leftarrow w^t-\frac{\eta^t}{\sigma^t}g^t
+    &w^{t+1}\leftarrow w^t-\frac{\eta^t}{\sigma^t}\ g^t
     \\
-    &w^{t+1}\leftarrow w^t-\frac{\eta}{\sqrt{\sum_{i=0}^t(g^i)^2}}g^t
+    &w^{t+1}\leftarrow w^t-\frac{\eta}{\sqrt{\sum_{i=0}^t(g^i)^2}}\ g^t
     \end{aligned}
     $$
 
@@ -61,3 +61,35 @@ Gradient descent
 * very low at the plateau  
 * stuck at saddle point  
 * stuck at local minima
+
+## Theory
+
+We want
+
+$$
+\mathop{min}\limits_xf(x)
+$$
+
+If we have $x=x^k+\alpha\ d^k$, then
+
+$$
+\begin{aligned}
+f(x)&=f(x^k+\alpha\ d^k)
+\\
+&\approx f(x^k)+\alpha\ \nabla f(x^k)^T\ d^k+o(\alpha\ ||d^k||)
+\end{aligned}
+$$
+
+As long as $\alpha$ small enough, $\nabla f(x^k)^T\ d^k<0$ means $f(x)<f(x^k)$.
+
+So, gradient descent means
+
+$$
+-\nabla f(x^k)^T\ d^k=||\nabla f(x^k)^T||\ ||d^k||\ cos\ \theta\leq||\nabla f(x^k)^T||\ ||d^k||
+$$
+
+Thus
+
+$$
+-\nabla f(x^k)=d^k
+$$
