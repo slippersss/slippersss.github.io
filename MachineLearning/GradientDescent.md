@@ -38,9 +38,9 @@ Reduce the learning rate by some factor every few epochs.
     \end{aligned}
     $$
 
-    where $\eta^t=\frac{\eta}{t+1}$, $\sigma^t=\sqrt{\frac{1}{t+1}\sum_{i=0}^t(g^i)^2}$, $g^t=\nabla L(w)$.
+    where $\eta^t=\frac{\eta}{t+1}$, $\sigma^t=\sqrt{\frac{1}{t+1}\ \sum_{i=0}^t\ (g^i)^2}$, $g^t=\nabla L(w)$.
 
-    It seems that $\frac{g^t}{\sum_{i=0}^t(g^i)^2}$ is uesd as $\frac{first\ derivative}{second\ derivative}$. Especially, we use $\sum_{i=0}^t(g^i)^2$ to approximate $second\ derivative$.
+    It seems that $\frac{g^t}{\sum_{i=0}^t\ (g^i)^2}$ is uesd as $\frac{first\ derivative}{second\ derivative}$. Especially, we use $\sum_{i=0}^t\ (g^i)^2$ to approximate $second\ derivative$.
 
 ## Stochastic gradient descent
 

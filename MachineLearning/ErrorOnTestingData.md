@@ -15,9 +15,9 @@ Estimator of mean
 
 $$
 \begin{aligned}
-&m=\frac{1}{N}\sum_n^Nx^n\neq\mu
+&m=\frac{1}{N}\ \sum_n^N\ x^n\neq\mu
 \\
-&E[m]=E[\frac{1}{N}\sum_n^Nx^n]=\frac{1}{N}\sum_n^NE[x^n]=\mu
+&E[m]=E[\frac{1}{N}\ \sum_n^N\ x^n]=\frac{1}{N}\ \sum_n^N\ E[x^n]=\mu
 \end{aligned}
 $$
 
@@ -27,9 +27,9 @@ Estimator of variance
 
 $$
 \begin{aligned}
-&s^2=\frac{1}{N}\sum_n^N(x^n-m)^2
+&s^2=\frac{1}{N}\ \sum_n^N\ (x^n-m)^2
 \\
-&E[s^2]=\frac{N-1}{N}\sigma^2
+&E[s^2]=\frac{N-1}{N}\ \sigma^2
 \end{aligned}
 $$
 
