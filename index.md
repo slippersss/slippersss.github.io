@@ -23,6 +23,8 @@ Welcome to slippersss's blog.
 
 # <a id="Leetcode"></a>Leetcode
 
+* [Stack](Leetcode/Stack)
+
 # <a id="Linux"></a>Linux
 
 # <a id="MachineLearning"></a>MachineLearning
