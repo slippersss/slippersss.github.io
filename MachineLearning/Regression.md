@@ -11,17 +11,21 @@ $$
 where
 
 $$
-x=[1,\ x_1,\ x_2,\ ...,\ x_m]
+\begin{align}
+&x=[1,\ x_1,\ x_2,\ ...,\ x_m]
 \\
-w=[w_0,\ w_1,\ w_2,\ ...,\ w_m]
+&w=[w_0,\ w_1,\ w_2,\ ...,\ w_m]
+\end{align}
 $$
 
 ## Cost/Loss function
 
 $$
-L(w)=\frac{1}{n}\ \sum_i\ (f(x^{(i)})-y^{(i)})^2=\frac{1}{n}\ \sum_i\ (x^{(i)}\ w-y^{(i)})^2=\frac{1}{n}\ ||Xw-y||^2
+\begin{align}
+&L(w)=\frac{1}{n}\ \sum_i\ (f(x^{(i)})-y^{(i)})^2=\frac{1}{n}\ \sum_i\ (x^{(i)}\ w-y^{(i)})^2=\frac{1}{n}\ ||Xw-y||^2
 \\
-\frac{\partial\ L(w)}{\partial\ w}=\frac{2}{n}\ X^T\ (Xw-y)
+&\frac{\partial\ L(w)}{\partial\ w}=\frac{2}{n}\ X^T\ (Xw-y)
+\end{align}
 $$
 
 Let
@@ -45,7 +49,7 @@ $$
 ## Gradient descent
 
 $$
-w\larr w-r\ \frac{\partial\ L(w)}{\partial\ w}
+w\leftarrow w-r\ \frac{\partial\ L(w)}{\partial\ w}
 $$
 
 ## Stochastic gradient descent
