@@ -37,7 +37,7 @@ Javascript, created by Brendan Eich, 1995, different from java.
 * Object  
     * {id: 0, name: ""}  
 * Function  
-    * function f(x) { return 0 }  
+    * function f(x) { return 0 }
 
 ## Variable
 
