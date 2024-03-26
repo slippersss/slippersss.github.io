@@ -24,7 +24,7 @@ if (argument === "") {
     const L           = 12;
     const SIZE        = 15;
     const WIDTH       = 5;
-    const DEPTH       = 10;
+    const DEPTH       = 8; // 8 is faster while 10 is stronger
     const RATIO_BLACK = (argument === "firstMove") ? 1.0 : 0.9;
     const RATIO_WHITE = (argument === "firstMove") ? -0.9 : -1.0;
 
