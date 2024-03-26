@@ -15,7 +15,7 @@ Welcome to slippersss's blog.
 
 # <a id="Game"></a>Game
 
-* [Gobang](Game/GoBang/GoBang.html)
+* [GoBang](Game/GoBang/GoBang.html)
 
 # <a id="Javascript"></a>Javascript
 
