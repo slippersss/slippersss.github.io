@@ -162,8 +162,8 @@ if (argument === "") {
         }
 
         sort(a, b, descend) {
-            var bound = this.length(a) - 1;
             var flag = true;
+            var bound = this.length(a) - 1;
             while (flag) {
                 flag = false;
                 for (var i = 0; i < bound; ++i) {
@@ -416,8 +416,8 @@ if (argument === "") {
             }
             var restBackup = util.copy(arena.rest);
             var best;
-            var temp = arena.score;
             var width = (this.width < util.length(arena.rest)) ? this.width : util.length(arena.rest);
+            var temp = arena.score;
             this.rearrange(arena, role);
             for (var i = 0; i < width; ++i) {
                 var [x, y] = arena.rest[i];
@@ -454,9 +454,8 @@ if (argument === "") {
             if (this.start) {
                 this.start = false;
                 return this.search(arena, this.role, (this.depth & 1) ? (this.depth + 1) / 2 : this.depth / 2, -2147483648, 2147483647)[1];
-            } else {
-                return this.search(arena, this.role, this.depth, -2147483648, 2147483647)[1];
             }
+            return this.search(arena, this.role, this.depth, -2147483648, 2147483647)[1];
         }
     }
 
@@ -479,7 +478,7 @@ if (argument === "") {
             if (this.player !== BLACK) {
                 var temp = (this.board.size & 1) ? (this.board.size + 1) / 2 : this.board.size / 2;
                 var td = document.getElementById(temp + "_" + temp);
-                td.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.svg\" width=\"50\" height=\"50\">";
+                td.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.png\" width=\"50\" height=\"50\">";
                 this.board.chess(temp, temp, BLACK);
                 this.used.push([temp, temp]);
                 util.remove(this.rest, [temp, temp]);
@@ -512,9 +511,9 @@ if (argument === "") {
         }
 
         evaluate() {
+            var score = 0;
             var [x, y] = util.tail(this.used);
             var temp = this.board.check(x, y);
-            var score = 0;
             this.board.chess(x, y, BLANK);
             score -= acScore.match(util.horizontal(this.board.data, x, y));
             score -= acScore.match(util.vertical(this.board.data, x, y));
@@ -540,15 +539,15 @@ if (argument === "") {
             var [m, n] = this.robot.move(this);
             var td = document.getElementById(m + "_" + n);
             if (this.robot.role === BLACK) {
-                td.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.svg\" width=\"50\" height=\"50\">";
+                td.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.png\" width=\"50\" height=\"50\">";
                 var [a, b] = util.tail(this.used);
                 var temp = document.getElementById(a + "_" + b);
-                temp.innerHTML = "<img src=\"GoBang.Attachment/White.svg\" width=\"50\" height=\"50\">";
+                temp.innerHTML = "<img src=\"GoBang.Attachment/White.png\" width=\"50\" height=\"50\">";
             } else {
-                td.innerHTML = "<img src=\"GoBang.Attachment/WhiteActive.svg\" width=\"50\" height=\"50\">";
+                td.innerHTML = "<img src=\"GoBang.Attachment/WhiteActive.png\" width=\"50\" height=\"50\">";
                 var [a, b] = util.tail(this.used);
                 var temp = document.getElementById(a + "_" + b);
-                temp.innerHTML = "<img src=\"GoBang.Attachment/Black.svg\" width=\"50\" height=\"50\">";
+                temp.innerHTML = "<img src=\"GoBang.Attachment/Black.png\" width=\"50\" height=\"50\">";
             }
             this.board.chess(m, n, this.robot.role);
             this.used.push([m, n]);
@@ -563,8 +562,13 @@ if (argument === "") {
     // ########## MAIN ########## //
     var board = document.getElementById("board");
     var slogan = document.getElementById("slogan");
+    var start = document.getElementById("start");
     board.removeAttribute("hidden");
     slogan.removeAttribute("hidden");
+    start.removeAttribute("hidden");
+    start.onclick = () => {
+        window.location.href = "GoBang.html";
+    };
     for (var i = 0; i < SIZE; ++i) {
         var tr = document.createElement("tr");
         tr.style.display = "block";
@@ -572,9 +576,9 @@ if (argument === "") {
             var td = document.createElement("td");
             td.id = (i + 1) + "_" + (j + 1);
             if ((i + 1 === S && (j + 1 === S || j + 1 === L)) || (i + 1 === M && j + 1 === M) || (i + 1 === L && (j + 1 === S || j + 1 === L))) {
-                td.innerHTML = "<img src=\"GoBang.Attachment/BlankPoint.svg\" width=\"50\" height=\"50\">";
+                td.innerHTML = "<img src=\"GoBang.Attachment/BlankPoint.png\" width=\"50\" height=\"50\">";
             } else {
-                td.innerHTML = "<img src=\"GoBang.Attachment/Blank.svg\" width=\"50\" height=\"50\">";
+                td.innerHTML = "<img src=\"GoBang.Attachment/Blank.png\" width=\"50\" height=\"50\">";
             }
             tr.append(td);
         }
@@ -588,18 +592,18 @@ if (argument === "") {
             var [x, y] = event.target.parentNode.id.split("_");
             [x, y] = [Number(x), Number(y)];
             if (arena.player === BLACK) {
-                event.target.parentNode.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.svg\" width=\"50\" height=\"50\">";
+                event.target.parentNode.innerHTML = "<img src=\"GoBang.Attachment/BlackActive.png\" width=\"50\" height=\"50\">";
                 if (util.length(arena.used)) {
                     var [a, b] = util.tail(arena.used);
                     var temp = document.getElementById(a + "_" + b);
-                    temp.innerHTML = "<img src=\"GoBang.Attachment/White.svg\" width=\"50\" height=\"50\">";
+                    temp.innerHTML = "<img src=\"GoBang.Attachment/White.png\" width=\"50\" height=\"50\">";
                 }
             } else {
-                event.target.parentNode.innerHTML = "<img src=\"GoBang.Attachment/WhiteActive.svg\" width=\"50\" height=\"50\">";
+                event.target.parentNode.innerHTML = "<img src=\"GoBang.Attachment/WhiteActive.png\" width=\"50\" height=\"50\">";
                 if (util.length(arena.used)) {
                     var [a, b] = util.tail(arena.used);
                     var temp = document.getElementById(a + "_" + b);
-                    temp.innerHTML = "<img src=\"GoBang.Attachment/Black.svg\" width=\"50\" height=\"50\">";
+                    temp.innerHTML = "<img src=\"GoBang.Attachment/Black.png\" width=\"50\" height=\"50\">";
                 }
             }
             consider = true;
@@ -624,5 +628,10 @@ if (argument === "") {
     // ########## MAIN ########## //
 } else {
     var warning = document.getElementById("warning");
+    var start = document.getElementById("start");
     warning.removeAttribute("hidden");
+    start.removeAttribute("hidden");
+    start.onclick = () => {
+        window.location.href = "GoBang.html";
+    };
 }
